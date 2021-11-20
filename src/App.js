@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+  const w2100MQ = useMediaQuery({ maxWidth: 2100 })
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <p>w2100MQ screen: {JSON.stringify(w2100MQ)}</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
